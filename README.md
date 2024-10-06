@@ -8,7 +8,10 @@
 - pip（Python 包管理器）
 
 ## 安裝步驟
-
+## 資料庫安裝
+```bash
+docker run -d --name mysql-container -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:latest
+```
 ### 1. 創建虛擬環境
 首先，在專案目錄中創建一個 Python 虛擬環境：
 ```bash
